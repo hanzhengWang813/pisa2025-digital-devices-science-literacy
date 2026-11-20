@@ -1,0 +1,21 @@
+# PISA 2025「数字设备使用与科学素养」论文 —— 分析环境依赖
+# 本包实测环境：macOS (darwin, arm64) + Python 3.13.12
+# 安装：python3 -m pip install -r requirements.txt
+
+numpy==2.5.4
+pandas==3.1.1
+scipy==1.18.1
+scikit-learn==1.9.1      # s5_lpa.py 潜在剖面（GaussianMixture）
+matplotlib==3.11.2       # s6_figures.py / s8_rcs*.py / s18_missing_fig.py 绘图
+pyarrow==26.0.1          # parquet 读写（未安装时自动退回 pickle，见 common2.read_frame）
+pyreadstat==1.3.8        # 读取 SPSS .sav 原始数据
+python-docx==1.2.0       # build_manuscript.py / build_report.py / build_frontmatter.py
+
+# 说明
+# ----
+# 1. 原包在 Windows + Python 3.13.14 下完成（numpy 2.5.2 / pandas 3.0.5），
+#    本包在 macOS + Python 3.13.12 下复算，关键估计逐位一致（见 README §6）。
+# 2. 中文字体：common2.setup_font() 按 Windows(simhei) → macOS(PingFang/Songti)
+#    → Linux(wqy/Noto CJK) 顺序查找，找不到则退回 matplotlib 默认字体。
+#    稿件用的 Figure 1 为英文标签，不依赖中文字体。
+# 3. 未装 pyarrow 也能跑：写 parquet 会自动改为 pickle，读入时两种格式都认。

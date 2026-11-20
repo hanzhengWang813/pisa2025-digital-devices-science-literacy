@@ -1,0 +1,42 @@
+{
+  "n_raw": 12385,
+  "dev_int_z": 0.26,
+  "h_leisure": 0.21,
+  "h_learn": 0.22,
+  "SELFREG": 0.28,
+  "science": 0.0,
+  "ESCS": 0.47,
+  "female": 0.0,
+  "ICTHOME": 0.33,
+  "use_total": 0.19,
+  "leisure_share": 2.27,
+  "n_key_complete": 12304,
+  "n_model": 12237,
+  "complete_case_vs_all": {
+    "science": {
+      "all": 597.044,
+      "listwise": 598.036,
+      "diff_in_sd": 0.012
+    },
+    "SELFREG": {
+      "all": 0.306,
+      "listwise": 0.308,
+      "diff_in_sd": 0.003
+    },
+    "dev_int_z": {
+      "all": -0.857,
+      "listwise": -0.859,
+      "diff_in_sd": -0.002
+    },
+    "ESCS": {
+      "all": -0.524,
+      "listwise": -0.526,
+      "diff_in_sd": -0.001
+    },
+    "female": {
+      "all": 0.521,
+      "listwise": 0.52,
+      "diff_in_sd": -0.002
+    }
+  }
+}

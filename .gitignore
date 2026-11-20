@@ -1,0 +1,27 @@
+# Data and derived files are not redistributed in this repository.
+# Raw PISA data: obtain from the OECD and set PISA_SAV.
+*.sav
+*.sav.gz
+*.parquet
+*.pkl
+*.RData
+
+# Manuscript and submission files are not included in the public archive.
+*.docx
+*.doc
+01_*.pdf
+02_*.pdf
+
+# Python / editor noise
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+~$*
+
+# Local scratch output
+run/output/cache/
+/tmp/

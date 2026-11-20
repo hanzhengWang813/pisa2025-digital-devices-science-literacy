@@ -1,0 +1,16 @@
+# Normalise all text files to LF so the shell script and Python sources stay
+# portable across Windows, macOS and Linux.
+* text=auto eol=lf
+
+*.sh   text eol=lf
+*.py   text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.csv  text eol=lf
+
+# Binary assets
+*.png  binary
+*.jpg  binary
+*.pdf  binary
+*.docx binary
+*.sav  binary

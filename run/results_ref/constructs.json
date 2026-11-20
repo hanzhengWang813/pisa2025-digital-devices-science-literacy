@@ -1,0 +1,13 @@
+{
+  "cronbach_alpha_4item": 0.06854280084371567,
+  "mean_interitem_r": 0.029495317400096376,
+  "n_reliability": 6536,
+  "alpha_attention": 0.7600009441375732,
+  "alpha_dependence": 0.4879823923110962,
+  "corr_digit_sr_SELFREG": 0.15378259777274922,
+  "cn_n": 12385,
+  "corr_ICTWKDY_h_leisure": 0.1608342557249424,
+  "corr_h_leisure_SELFREG": -0.043813424892292965,
+  "corr_h_leisure_science": -0.09749461052173822,
+  "corr_SELFREG_science": 0.20110514391687093
+}
